@@ -1,6 +1,13 @@
 {{-- Extender o layout principal --}}
 @extends('admin.layouts.principal')
 
+{{-- Section para o titulo --}}
+@section('titulo','Cursos')
+
+{{-- Section para a acao --}}
+@section('acao', 'Listar')
+
+{{-- Section Principal --}}
 @section('conteudo-principal') {{-- Tem que colocar o nome do yeild onde quero jogar o conteudo  --}}
 <a href="#" class="btn btn-primary mt-n4 mb-2 float-right">
     Adicionar

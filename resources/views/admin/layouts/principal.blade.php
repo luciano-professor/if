@@ -6,8 +6,8 @@
 
     <div class="mt-3">
         <h3>
-            Cursos
-            <small class="text-muted">Listar</small>
+            @yield('titulo')
+            <small class="text-muted">@yield('acao')</small>
         </h3>
     </div>
 
