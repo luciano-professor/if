@@ -1,39 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{-- Extender o layout principal --}}
+@extends('admin.layouts.principal')
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+@section('conteudo-principal') {{-- Tem que colocar o nome do yeild onde quero jogar o conteudo  --}}
+<a href="#" class="btn btn-primary mt-n4 mb-2 float-right">
+    Adicionar
+</a>
 
-    <title>IF - Cursos</title>
-</head>
-<body>
+<table class="table table-hover">
+    <tr>
+        <td>Sistemas de Informação</td>
+        <td class="d-flex justify-content-end">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">IF - Admin</a>
+            <span class="btn btn-info btn-sm" title="Editar">
+                <i class="fas fa-edit fa-fw"></i>
+            </span>
 
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a href="" class="nav-link">Cursos</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">Turmas</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">Matrizes</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">Alunos</a>
-            </li>
-            <li class="nav-item">
-                <a href="" class="nav-link">Matrículas</a>
-            </li>
-        </ul>
+            <button class="btn btn-danger btn-sm ml-1" title="Excluir">
+                <i class="far fa-trash-alt fa-fw"> </i>
+            </button>
 
-    </nav>
+        </td>
+    </tr>
+</table>
+@endsection
 
-</body>
-</html>
+
