@@ -10,4 +10,9 @@ class CursoController extends Controller
     {
         return view('admin.cursos.listar');
     }
+
+    public function adicionar()
+    {
+        return view('admin.cursos.form');
+    }
 }

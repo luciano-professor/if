@@ -13,7 +13,6 @@
 
     {{-- Abaixo vamos colocar a parte principal que mudará para cada view --}}
     {{-- O yeild define uma área onde será inserido uma seção com conteudo dinamico --}}
-
     @yield('conteudo-principal')
 
 

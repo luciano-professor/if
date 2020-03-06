@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/cursos', 'CursoController@listar');
+Route::get('/admin/cursos/adicionar', 'CursoController@adicionar');
