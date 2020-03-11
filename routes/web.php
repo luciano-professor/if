@@ -17,5 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin/cursos', 'CursoController@listar');
-Route::get('/admin/cursos/adicionar', 'CursoController@adicionar');
+Route::prefix('admin')->group(function () {
+    Route::get('/cursos', 'CursoController@listar')->name('cursos.listar');
+    Route::get('/cursos/adicionar', 'CursoController@adicionar')->name('cursos.form_adicionar');
+});

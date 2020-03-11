@@ -14,21 +14,24 @@
 </a>
 
 <table class="table table-hover">
-    <tr>
-        <td>Sistemas de Informação</td>
-        <td class="d-flex justify-content-end">
+    @forelse ($cursos as $curso)
+        <tr>
+            <td>{{$curso->nome}}</td>
+            <td class="d-flex justify-content-end">
+                <span class="btn btn-info btn-sm" title="Editar">
+                    <i class="fas fa-edit fa-fw"></i>
+                </span>
+                <button class="btn btn-danger btn-sm ml-1" title="Excluir">
+                    <i class="far fa-trash-alt fa-fw"></i>
+                </button>
+            </td>
+        </tr>
+    @empty
+        <tr>
+            <td>Não há cursos cadastrados!</td>
+        </tr>
+    @endforelse
 
-            <span class="btn btn-info btn-sm" title="Editar">
-                <i class="fas fa-edit fa-fw"></i>
-            </span>
-
-            <button class="btn btn-danger btn-sm ml-1" title="Excluir">
-                <i class="far fa-trash-alt fa-fw"> </i>
-            </button>
-
-        </td>
-    </tr>
 </table>
+
 @endsection
-
-

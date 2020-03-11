@@ -3,7 +3,7 @@
 
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a href="" class="nav-link">Cursos</a>
+            <a href="{{route('cursos.listar')}}" class="nav-link">Cursos</a>
         </li>
         <li class="nav-item">
             <a href="" class="nav-link">Turmas</a>
